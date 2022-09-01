@@ -19,3 +19,14 @@ const getDetails = () => {
 	}
 }
 
+// Create Reducer object
+const reducer = (state= [], action) => {
+    switch(action) {
+		case FETCH_API:
+			return {state, payload};
+		case GET_DETAILS:
+			return { state, payload};
+		default:
+			return state;
+	}
+}
